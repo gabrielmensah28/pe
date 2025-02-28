@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+label.logos {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.logos span {
+    color: black;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 auto;
+    
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    
+    text-transform: uppercase;
+    
+}
+/*header {
+    background: #309245;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}*/
+nav {
+    /*height: 80px;
+    width: 100%;*/
+    background: #309245;
+    
+}
+nav ul li a:hover {
+    color:#2b2727;
+    font-size: 30px;
+    width: 30px;
+}
+
+.home-wallpaper {
+    background-image: url(indeS.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height:82vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.home-wallpaper h1 {
+    font-size: 90px;
+}
+.home-wallpaper p {
+    font-size: 30px;
+}
+
+.home-wallpaper::before {
+    content: '';
+        background-position: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.397);
+        height: 490px;
+} 
+
+/*This is the home about info "management"*/
+.management h1 {
+    padding-left: 100px;
+    font-size: 60px;
+    color: #0a0e0b;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: solid;
+      font-style: normal;
+    
+}
+
+.about-info p {
+    font-size: 20px;
+}
+
+
+.management {
+    background: linear-gradient(130deg, #34b679, #19e977);
+    width: 1203px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.445);
+    transition: transform 0.40s, box-shadow 0.25s;
+    margin-left: 13px;
+
+}
+
+.management:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.377);
+}
+
+
+
+/*GALLERY*/
+.gallery-home h1{
+    font-size: 100px;
+    padding-left: 400px;
+}
+
+.gallery-home { 
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.685);
+    border-radius: 20px;
+    background: #5a9273;
+}
+.gallery-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+.home-cont {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+
+.home-cont > img {
+    width: 100%;
+    /*vertical-align: middle;*/
+    padding: 4px;
+    border-radius: 18px;
+}
+
+/* Attractions section */
+.attraction-grid {
+    display: grid;
+/*    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));*/
+    
+grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 100px;
+    max-width: 960px;
+}
+
+.attraction-card {
+    background-color: #2150252d;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    border: #0a0e0b 1px solid;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: none;
+}
+.attraction-card h3, .attraction-card p {
+    padding: 0 1.5rem;
+}
+
+.attraction-card h3 {
+    margin-top: 1.2rem;
+}
+
+.attraction-card p {
+    margin-bottom: 1.2rem;
+}
+
+.pic-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.pic-cont img:hover{
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+    transform: scale(1.5) zoom-in(13deg);
+}
+#attractions h1 {
+    font-size: 83px;
+    color: #115024;
+}
+
+.reference span {
+   color: blue;
+}
+.span-img img:hover {
+    transform: scale(1.2) rotate(3deg);
+}
+.span-img img {
+    border-radius: 10px;
+}
+
+.contact-back {
+    background: url('proxy-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    color: white;
+    display: flex;
+
+}
+
+.contact-back h2{ 
+    padding-top: 78px;
+    padding-left: 50px;
+    font-size: 50px;
+}
+.contact-back h4 a {
+    text-decoration: none;
+    color: white;
+}
+.contact-back h4 {
+    padding-left: 60%;
+    padding-top: 100px;
+    font-size: 18px;
+}
+.contact-back h4 a:hover {
+    
+    font-size: 19px;
+}
+
+
+.contact {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    padding-left: 150px;
+}
+
+.box {
+    height: 400px;
+    width: 33.3%;
+    padding-top: 150px;
+}
+.fa-regular {
+    font-size: 40px;
+}
+.fa-solid {
+    font-size: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+.footer {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+.footer ul {
+    display: block;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-left: 20px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: #115024;
+}
